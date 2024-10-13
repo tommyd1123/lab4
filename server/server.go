@@ -30,6 +30,7 @@ func acceptConns(ln net.Listener, conns chan net.Conn) {
 			handleError(err)
 			continue
 		}
+		fmt.Println("New connection accepted")
 		conns <- conn
 	}
 }

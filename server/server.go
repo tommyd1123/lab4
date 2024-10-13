@@ -59,7 +59,7 @@ func main() {
 
 	//TODO Create a Listener for TCP connections on the port given above.
 
-	ln, err := net.Listen("ptr", *portPtr)
+	ln, err := net.Listen("tcp", *portPtr)
 	if err != nil {
 		handleError(err)
 		return

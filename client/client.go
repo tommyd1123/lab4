@@ -43,7 +43,8 @@ func write(conn net.Conn) {
 
 func main() {
 	// Get the server address and port from the commandline arguments.
-	addrPtr := flag.String("ip", "127.0.0.1:8030", "IP:port string to connect to")
+	addrPtr := flag.String("ip", "35.153.209.211:8030", "IP:port to connect to")
+
 	flag.Parse()
 	//TODO Try to connect to the server
 	conn, err := net.Dial("tcp", *addrPtr)
